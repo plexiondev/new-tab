@@ -167,6 +167,9 @@ strong, :focus-visible {
     gap: 20px;
 }
 /* input */
+.search-bar .sc-container {
+    flex: 1;
+}
 .search-bar input {
     margin-left: -20px;
     margin-top: -5px;
@@ -180,6 +183,22 @@ strong, :focus-visible {
     /* browser defaults */
     background: none;
     border: none;
+}
+.search-bar .sc-container .caret {
+    margin-left: -20px;
+    /*width: 3px;*/
+    height: 60%;
+    border-radius: 2px;
+    background-color: var(--b1);
+    animation: caret 1.3s infinite;
+}
+@keyframes caret {
+    from, to {
+        background-color: var(--b2);
+    }
+    50% {
+        background-color: var(--l1);
+    }
 }
 .search-bar input::placeholder {
     opacity: 1; /* firefox */

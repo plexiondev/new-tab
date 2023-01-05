@@ -10,6 +10,7 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/datetime.js"></script>
+    <script src="/js/smoothCaret.min.js" defer></script>
     <!-- icon -->
     <link rel="shortcut icon" type="ico" href="/img/taiga.jpg"/>
 </head>
@@ -30,7 +31,10 @@
             </div>
             <div class="search">
                 <div class="search-bar">
-                    <input id="search" placeholder="search the internet . ." autofocus autocomplete="off">
+                    <div class="sc-container">
+                        <input data-sc class="smoothCaretInput" id="search" placeholder="search the internet . ." autofocus autocomplete="off">
+                        <div class="caret" style="width: 3px;"></div>
+                    </div>
                     <button class="go" id="go" onclick="go()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
                     </button>
