@@ -133,6 +133,10 @@ strong, :focus-visible {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    transition: opacity 0.4s;
+}
+.main:not(:hover, :focus-visible) {
+    opacity: 0;
 }
 
 /* links */
