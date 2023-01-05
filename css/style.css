@@ -190,11 +190,11 @@ strong, :focus-visible {
     height: 60%;
     border-radius: 2px;
     background-color: var(--b1);
-    animation: caret 1.3s infinite;
+    animation: caret 1.5s infinite;
 }
 @keyframes caret {
     from, to {
-        background-color: var(--b2);
+        background-color: var(--b3);
     }
     50% {
         background-color: var(--l1);
