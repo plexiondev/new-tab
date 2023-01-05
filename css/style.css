@@ -4,10 +4,7 @@
 
 
 :root, body {
-    --day: 0;
-    --night: 0;
-
-    --base-hue: var(--hue);
+    --base-hue: 0;
     --saturation: 1;
 
     /* b1-6 */
@@ -33,6 +30,9 @@
     --c1: hsl(var(--base-hue),calc(var(--saturation)*40%),100%);
     --c2: hsl(var(--base-hue),calc(var(--saturation)*40%),90%); /* subcontent */
 }
+[time-of-day="morning"]   { --base-hue: 15;  }
+[time-of-day="afternoon"] { --base-hue: 183; }
+[time-of-day="evening"]   { --base-hue: 260; }
 
 body {
     font-family: Syne, Inter, sans-serif;
