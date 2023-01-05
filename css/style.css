@@ -46,6 +46,17 @@ body {
     transition: background-color 0.4s, color 0.4s, transform 0.1s;
 }
 
+/* text select */
+::selection {
+    background: var(--l3);
+    color: var(--b6) !important;
+}
+::-moz-selection {
+    background: var(--l3);
+    color: var(--b6) !important;
+}
+/* ^ have to be seperate due to spec */
+
 h1, h2 {
     color: var(--c1);
     font-weight: 600;
