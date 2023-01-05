@@ -135,7 +135,7 @@ strong, :focus-visible {
     gap: 30px;
     transition: opacity 0.4s;
 }
-.main:not(:hover, :focus-visible) {
+.main:not(:hover, :focus-within) {
     opacity: 0;
 }
 
