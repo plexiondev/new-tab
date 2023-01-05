@@ -1,0 +1,137 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+:root, body {
+    --day: 0;
+    --night: 0;
+
+    --base-hue: var(--hue);
+    --saturation: 1;
+
+    /* b1-6 */
+    --b1: hsl(var(--base-hue),calc(var(--saturation)*8%),40%);
+    --b2: hsl(var(--base-hue),calc(var(--saturation)*8%),30%);
+    --b3: hsl(var(--base-hue),calc(var(--saturation)*8%),25%); /* card hover */
+    --b4: hsl(var(--base-hue),calc(var(--saturation)*8%),20%); /* card */
+    --b5: hsl(var(--base-hue),calc(var(--saturation)*8%),15%); /* content */
+    --b6: hsl(var(--base-hue),calc(var(--saturation)*8%),10%); /* body */
+    /* d1-6 */
+    --d1: hsl(var(--base-hue),calc(var(--saturation)*20%),35%);
+    --d2: hsl(var(--base-hue),calc(var(--saturation)*20%),30%);
+    --d3: hsl(var(--base-hue),calc(var(--saturation)*20%),25%);
+    --d4: hsl(var(--base-hue),calc(var(--saturation)*20%),20%); /* tab bar */
+    --d5: hsl(var(--base-hue),calc(var(--saturation)*20%),15%); /* header */
+    --d6: hsl(var(--base-hue),calc(var(--saturation)*20%),10%);
+    /* l1-4 */
+    --l1: hsl(var(--base-hue),calc(var(--saturation)*50%),80%);
+    --l2: hsl(var(--base-hue),calc(var(--saturation)*50%),75%);
+    --l3: hsl(var(--base-hue),calc(var(--saturation)*50%),70%); /* link */
+    --l4: hsl(var(--base-hue),calc(var(--saturation)*50%),50%);
+    /* c1-2 */
+    --c1: hsl(var(--base-hue),calc(var(--saturation)*40%),100%);
+    --c2: hsl(var(--base-hue),calc(var(--saturation)*40%),90%); /* subcontent */
+}
+
+body {
+    font-family: Syne, Inter, sans-serif;
+    font-weight: 400;
+    color: var(--c2);
+    font-size: 20px;
+    background-color: var(--b6);
+    transition: background-color 0.2s, color 0.2s;
+}
+* {
+    transition: background-color 0.2s, color 0.2s;
+}
+
+h1, h2 {
+    color: var(--c1);
+    font-weight: 600;
+}
+h3, h4 {
+    color: var(--c1);
+    font-weight: 500;
+}
+
+h1 { font-size: 60px; }
+h2 { font-size: 40px; }
+h3 { font-size: 30px; }
+h4 { font-size: 22px; }
+h5 { font-size: 20px; }
+
+a {
+    color: var(--l3);
+    text-underline-offset: 16%;
+}
+a:is(:hover, :focus-visible) {
+    color: var(--c1);
+}
+
+strong, :focus-visible {
+    background-color: var(--l3);
+    color: var(--b6) !important;
+    outline: none;
+}
+
+/* main */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* panel */
+.panel {
+    width: 100%;
+    height: 100%;
+    max-width: 660px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* header */
+.head {
+    display: flex;
+    gap: 50px;
+}
+.head .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+/* avatar */
+.avatar {
+    --size: 160px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.avatar img {
+    width: var(--size);
+    height: var(--size);
+}
+
+/* main */
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* links */
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
