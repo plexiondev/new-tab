@@ -166,6 +166,7 @@ strong, :focus-visible {
     display: flex;
     gap: 20px;
 }
+
 /* input */
 .search-bar .sc-container {
     flex: 1;
@@ -184,6 +185,7 @@ strong, :focus-visible {
     background: none;
     border: none;
 }
+
 .search-bar .sc-container .caret {
     margin-left: -20px;
     /*width: 3px;*/
@@ -204,6 +206,7 @@ strong, :focus-visible {
     opacity: 1; /* firefox */
     color: var(--b2);
 }
+
 /* go! */
 .search-bar .go {
     padding: 0 20px;
