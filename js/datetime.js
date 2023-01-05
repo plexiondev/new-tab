@@ -17,6 +17,7 @@ function update_date_time() {
     else                      time_of_day = 'evening';
 
     document.body.setAttribute('time-of-day',time_of_day);
+    document.getElementById('time-of-day').textContent = time_of_day;
 }
 
 // pad number
