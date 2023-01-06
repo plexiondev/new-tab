@@ -109,7 +109,7 @@ strong, :focus-visible {
     animation: show_panel 0.9s;
 }
 @keyframes show_panel {
-    from, 30% {
+    from, 55% {
         opacity: 0;
     }
     to {
