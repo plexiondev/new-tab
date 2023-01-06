@@ -33,6 +33,7 @@
 [time-of-day="morning"]   { --base-hue: 15;  }
 [time-of-day="afternoon"] { --base-hue: 183; }
 [time-of-day="evening"]   { --base-hue: 260; }
+[time-of-day="night"]     { --base-hue: 340; }
 
 body {
     font-family: Syne, Inter, sans-serif;
@@ -97,6 +98,7 @@ strong, :focus-visible {
 
 /* panel */
 .panel {
+    /* reduces elements shifting during day */
     width: 100%;
     height: 100%;
     max-width: 730px;

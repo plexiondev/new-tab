@@ -12,7 +12,8 @@ function update_date_time() {
 
     // time of day
     let date_hours = date_now.getHours();
-    if      (date_hours < 12) time_of_day = 'morning';
+    if      (date_hours < 6)  time_of_day = 'night';
+    else if (date_hours < 12) time_of_day = 'morning';
     else if (date_hours < 18) time_of_day = 'afternoon';
     else                      time_of_day = 'evening';
 
