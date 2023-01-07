@@ -5,8 +5,10 @@
 function go() {
     let request = document.getElementById('search').value;
 
-    if (request.charAt(0) == '!') window.location.href = 'https://' + request.replace('!','');
-    else                          window.location.href = `http://www.google.com/search?q=${request}`;
+    if      (request.charAt(0) == '!') window.location.href = 'https://' + request.replace('!','');
+    else if (request.charAt(0) == '#') window.location.href = 'https://youtube.com/results/?search_query=' + request.replace('#','');
+    else if (request.charAt(0) == '@') window.location.href = request.replace('@','');
+    else                               window.location.href = `http://www.google.com/search?q=${request}`;
 }
 
 // clear search
