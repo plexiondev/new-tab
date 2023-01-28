@@ -4,6 +4,7 @@
 // take search
 function go() {
     let request = document.getElementById('search').value;
+    if (request == '') return;
 
     if      (request.charAt(0) == '!') window.location.href = 'https://' + request.replace('!','');
     else if (request.charAt(0) == '#') window.location.href = 'https://youtube.com/results/?search_query=' + request.replace('#','');
