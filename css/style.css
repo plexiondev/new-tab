@@ -1,5 +1,5 @@
 @import url('reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import url('fonts/jetbrains/jetbrains.css');
 
 
@@ -36,7 +36,7 @@
 [time-of-day="night"]     { --base-hue: 340; }
 
 body {
-    font-family: Syne, Inter, sans-serif;
+    font-family: Inter, sans-serif;
     font-weight: 400;
     color: var(--c2);
     font-size: 20px;
@@ -118,6 +118,7 @@ strong, :focus-visible {
 /* header */
 .head {
     display: flex;
+    justify-content: center;
     gap: 50px;
 }
 .head .info {
@@ -127,10 +128,13 @@ strong, :focus-visible {
     gap: 10px;
 }
 .date {
-    font-family: "JetBrains Mono", monospace;
     display: flex;
-    flex-direction: column;
-    gap: 3px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.date #time {
+    min-width: 82px;
 }
 /* avatar */
 .avatar {
@@ -169,9 +173,10 @@ strong, :focus-visible {
 
 /* search */
 .search-bar {
-    background-color: var(--b5);
-    padding: 15px 40px;
-    border-radius: 20px;
+    border: 1px solid var(--b4);
+    background-color: rgba(0,0,0,20%);
+    padding: 10px 40px;
+    border-radius: 50px;
     display: flex;
     gap: 20px;
 }
@@ -184,12 +189,12 @@ strong, :focus-visible {
     margin-left: -20px;
     margin-top: -5px;
     margin-bottom: -5px;
-    padding: 10px 20px;
+    padding: 6px 20px;
     flex: 1;
     font-family: Syne, Inter, sans-serif;
     font-weight: 400;
     color: var(--c2) !important;
-    font-size: 20px;
+    font-size: 18px;
     /* browser defaults */
     background: none;
     border: none;

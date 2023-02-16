@@ -29,6 +29,5 @@ function pad_num(text) {
         return text;
 }
 
-
 // interval
 window.setInterval(update_date_time, 50);
