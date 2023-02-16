@@ -28,3 +28,9 @@ $("#search").keyup(function(event) {
         clear_search();
     }
 });
+
+// add to input
+function add_to_search(value) {
+    document.getElementById('search').value += value;
+    document.getElementById('search').focus();
+}

@@ -173,8 +173,15 @@ strong, :focus-visible {
     /*justify-content: space-between;*/
     justify-content: center;
     gap: 50px;
+}
+.notice p {
     font-size: 14px;
     color: hsl(var(--base-hue),calc(var(--saturation)*8%),50%);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.notice p:hover {
+    color: var(--c1);
 }
 .notice strong {
     background-color: initial;
