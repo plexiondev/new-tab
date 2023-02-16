@@ -210,6 +210,12 @@ strong, :focus-visible {
     margin-right: 3px;
 }
 
+[value="Glaive"], [value="Aldn"],
+[value="Introvert"]
+{
+    text-transform: lowercase;
+}
+
 /* links */
 .links {
     display: flex;

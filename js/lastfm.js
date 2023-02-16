@@ -57,8 +57,13 @@ function load_tracks(data) {
     let tracks = data.recenttracks.track;
     console.log('loaded tracks!');
 
+    // track
     document.getElementById('track').textContent = tracks[0].name;
+    document.getElementById('track').setAttribute('value',tracks[0].name);
+
+    // artist
     document.getElementById('artist').textContent = tracks[0].artist['#text'];
+    document.getElementById('artist').setAttribute('value',tracks[0].artist['#text']);
 }
 
 
