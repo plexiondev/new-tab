@@ -13,7 +13,7 @@
     --b3: hsl(var(--base-hue),calc(var(--saturation)*8%),25%); /* card hover */
     --b4: hsl(var(--base-hue),calc(var(--saturation)*8%),20%); /* card */
     --b5: hsl(var(--base-hue),calc(var(--saturation)*8%),15%); /* content */
-    --b6: hsl(var(--base-hue),calc(var(--saturation)*8%),10%); /* body */
+    --b6: hsl(var(--base-hue),calc(var(--saturation)*8%),5%); /* body */
     /* d1-6 */
     --d1: hsl(var(--base-hue),calc(var(--saturation)*20%),35%);
     --d2: hsl(var(--base-hue),calc(var(--saturation)*20%),30%);
@@ -96,8 +96,8 @@ strong, :focus-visible {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    backdrop-filter: blur(5px) brightness(60%);
-    background: linear-gradient(180deg, hsla(var(--base-hue),calc(var(--saturation)*8%),10%,45%) 0%, var(--b6) 100%);
+    backdrop-filter: blur(5px) brightness(40%);
+    background: linear-gradient(180deg, hsla(var(--base-hue),calc(var(--saturation)*8%),10%,15%) 0%, var(--b6) 100%);
 }
 
 /* panel */
@@ -187,6 +187,8 @@ strong, :focus-visible {
     background-color: initial;
     color: var(--c1) !important;
     font-weight: 700;
+    margin-right: 3px;
+    font-family: Inter !important;
 }
 
 /* links */
@@ -200,7 +202,7 @@ strong, :focus-visible {
 /* search */
 .search-bar {
     border: 1px solid var(--b4);
-    background-color: rgba(0,0,0,30%);
+    background-color: rgba(0,0,0,40%);
     padding: 10px 40px;
     border-radius: 50px;
     display: flex;
