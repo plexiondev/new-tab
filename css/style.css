@@ -32,7 +32,7 @@
 }
 [time-of-day="morning"]   { --base-hue: 15;  }
 [time-of-day="afternoon"] { --base-hue: 183; }
-[time-of-day="evening"]   { --base-hue: 260; }
+[time-of-day="evening"]   { --base-hue: 285; }
 [time-of-day="night"]     { --base-hue: 340; }
 
 body {
