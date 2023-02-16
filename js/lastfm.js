@@ -57,6 +57,9 @@ function load_tracks(data) {
     let tracks = data.recenttracks.track;
     console.log('loaded tracks!');
 
+    // url
+    document.getElementById('track-cont').href = tracks[0].url;
+
     // now playing
     try {
         if (tracks[0]['@attr'].nowplaying == 'true') document.getElementById('music').setAttribute('nowplaying','true');

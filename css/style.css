@@ -180,7 +180,7 @@ strong, :focus-visible {
     cursor: pointer;
     transition: color 0.2s;
 }
-.notice p:hover {
+.notice p:hover, .music .track:is(:hover, :focus-visible) p {
     color: var(--c1);
 }
 .notice strong {
@@ -198,6 +198,8 @@ strong, :focus-visible {
 .music .track {
     display: flex;
     gap: 20px;
+    text-decoration: none;
+    transition: color 0.2s;
 }
 .music .track p {
     font-size: 14px;
@@ -229,7 +231,7 @@ strong, :focus-visible {
     filter: brightness(150%);
 }
 
-[artist="Glaive"], [artist="Aldn"], [artist="brakence"]
+[artist="Glaive"], [artist="Aldn"], [artist="brakence"], [artist="Miraie"]
 {
     text-transform: lowercase;
 }
