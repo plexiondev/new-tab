@@ -247,6 +247,8 @@ strong, :focus-visible {
 /* search */
 .search-bar {
     border: 1px solid var(--b4);
+    /*background-image: url(/img/dither.png);
+    background-repeat: repeat;*/
     background-color: rgba(0,0,0,40%);
     padding: 10px 40px;
     border-radius: 50px;
