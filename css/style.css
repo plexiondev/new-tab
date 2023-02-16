@@ -167,6 +167,21 @@ strong, :focus-visible {
     opacity: 0;
 }
 
+/* notice */
+.notice {
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: center;
+    gap: 50px;
+    font-size: 14px;
+    color: hsl(var(--base-hue),calc(var(--saturation)*8%),50%);
+}
+.notice strong {
+    background-color: initial;
+    color: var(--c1) !important;
+    font-weight: 700;
+}
+
 /* links */
 .links {
     display: flex;
@@ -233,7 +248,7 @@ strong, :focus-visible {
     font-weight: 500;
     color: var(--b6) !important;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 50px;
     /* browser defaults */
     border: none;
 }
