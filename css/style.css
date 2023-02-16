@@ -210,8 +210,7 @@ strong, :focus-visible {
     margin-right: 3px;
 }
 
-[value="Glaive"], [value="Aldn"],
-[value="Introvert"]
+[artist="Glaive"], [artist="Aldn"], [artist="brakence"]
 {
     text-transform: lowercase;
 }
