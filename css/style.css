@@ -225,6 +225,7 @@ strong, :focus-visible {
     height: 12px;
     width: 12px;
     margin-right: 10px;
+    filter: brightness(150%);
 }
 
 [artist="Glaive"], [artist="Aldn"], [artist="brakence"]
