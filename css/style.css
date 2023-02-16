@@ -199,16 +199,6 @@ strong, :focus-visible {
     display: flex;
     gap: 20px;
 }
-.music .track p[nowplaying="true"]:before {
-    background-image: url(https://www.last.fm/static/images/icons/now_playing_grey_12.gif);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    content: '';
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-    margin-right: 10px;
-}
 .music .track p {
     font-size: 14px;
     color: hsl(var(--base-hue),calc(var(--saturation)*8%),50%);
@@ -218,6 +208,23 @@ strong, :focus-visible {
     color: var(--c1) !important;
     font-weight: 500;
     margin-right: 3px;
+}
+
+.music .track p {
+    opacity: 0.45;
+}
+.music .track p[nowplaying="true"] {
+    opacity: 1;
+}
+.music .track p[nowplaying="true"]:before {
+    background-image: url(https://www.last.fm/static/images/icons/now_playing_grey_12.gif);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
 }
 
 [artist="Glaive"], [artist="Aldn"], [artist="brakence"]
