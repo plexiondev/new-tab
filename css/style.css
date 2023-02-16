@@ -206,7 +206,6 @@ strong, :focus-visible {
     content: '';
     display: inline-block;
     height: 12px;
-    top: 50%;
     width: 12px;
     margin-right: 10px;
 }
