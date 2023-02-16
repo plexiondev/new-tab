@@ -168,7 +168,7 @@ strong, :focus-visible {
 }
 
 /* notice */
-.notice {
+.notice, .music {
     display: flex;
     /*justify-content: space-between;*/
     justify-content: center;
@@ -189,6 +189,48 @@ strong, :focus-visible {
     font-weight: 700;
     margin-right: 3px;
     font-family: Inter !important;
+}
+
+/* music */
+.music {
+    min-height: 14px;
+}
+.music .track {
+    display: flex;
+    gap: 20px;
+}
+.music .track p {
+    font-size: 14px;
+    color: hsl(var(--base-hue),calc(var(--saturation)*8%),50%);
+}
+.music .track strong {
+    background-color: initial;
+    color: var(--c1) !important;
+    font-weight: 500;
+    margin-right: 3px;
+}
+
+.music .track p {
+    opacity: 0.45;
+}
+.music .track p[nowplaying="true"] {
+    opacity: 1;
+}
+.music .track p[nowplaying="true"]:before {
+    background-image: url(https://www.last.fm/static/images/icons/now_playing_grey_12.gif);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+    filter: brightness(150%);
+}
+
+[artist="Glaive"], [artist="Aldn"], [artist="brakence"]
+{
+    text-transform: lowercase;
 }
 
 /* links */
