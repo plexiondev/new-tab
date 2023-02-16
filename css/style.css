@@ -40,7 +40,7 @@ body {
     font-weight: 400;
     color: var(--c2);
     font-size: 20px;
-    background-image: url(https://genshin.global/wp-content/uploads/2022/10/hu-tao-boo-ghost-koki-fanart-wallpaper-genshin-2048x946.jpg);
+    background-image: url(/img/wall/hutao768.png);
     background-size: cover;
     background-position: center;
     transition: background-color 0.4s, color 0.4s;
