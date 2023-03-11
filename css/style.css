@@ -281,7 +281,7 @@ strong, :focus-visible {
 }
 
 .search-bar .sc-container .caret {
-    margin-left: 0;
+    margin-left: -2px;
     /*width: 3px;*/
     height: 40%;
     border-radius: 2px;
