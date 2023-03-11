@@ -40,9 +40,7 @@ body {
     font-weight: 400;
     color: var(--c2);
     font-size: 20px;
-    background-image: url(/img/wall/hutao768.png);
-    background-size: cover;
-    background-position: center;
+    background-color: var(--b6);
     transition: background-color 0.4s, color 0.4s;
 }
 * {
@@ -93,22 +91,34 @@ strong, :focus-visible {
 .hero {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 120px 0;
     width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(5px) brightness(40%);
-    background: linear-gradient(180deg, hsla(var(--base-hue),calc(var(--saturation)*8%),10%,15%) 0%, var(--b6) 100%);
+}
+
+/* cover */
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 6 / 2;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 /* panel */
 .panel {
     /* reduces elements shifting during day */
     width: 100%;
-    max-width: 730px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     animation: show_panel 0.9s;
+}
+.panel .head-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 @keyframes show_panel {
     from, 55% {
