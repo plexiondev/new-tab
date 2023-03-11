@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/datetime.js"></script>
+    <!--<script src="/js/datetime.js"></script>-->
     <script src="/js/smoothCaret.min.js" defer></script>
     <!-- icon -->
     <link rel="shortcut icon" type="ico" href="/img/tab.svg"/>
@@ -24,7 +24,7 @@
                 <div class="search">
                     <div class="search-bar">
                         <div class="sc-container">
-                            <input list="search-list" data-sc class="smoothCaretInput" id="search" placeholder="search the internet . ." autofocus autocomplete="off">
+                            <input list="search-list" data-sc class="smoothCaretInput" id="search" placeholder="search anything!" autofocus autocomplete="off">
                             <div class="caret" style="width: 3px;"></div>
                             <datalist id="search-list">
                                 <option value="!discord.com/app">discord</option>
@@ -49,11 +49,11 @@
                         </button>
                     </div>
                 </div>
-            </div>
-            <div class="notice">
-                <p onclick="add_to_search('!')"><strong>!</strong> to open a site</p>
-                <p onclick="add_to_search('#')"><strong>#</strong> to search youtube</p>
-                <p onclick="add_to_search('@')"><strong>@</strong> to open direct</p>
+                <div class="notice">
+                    <p onclick="add_to_search('!')"><strong>!</strong> to open a site</p>
+                    <p onclick="add_to_search('#')"><strong>#</strong> to search youtube</p>
+                    <p onclick="add_to_search('@')"><strong>@</strong> to open direct</p>
+                </div>
             </div>
             <div class="music">
                 <a class="track" id="track-cont">
