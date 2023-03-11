@@ -17,47 +17,43 @@
 <body style="--hue: 0">
     <div class="hero">
         <div class="panel">
-            <div class="head">
-                <span class="info">
-                    <h3>good <i id="time-of-day">bye</i>, <strong>plexion</strong></h3>
-                    <div class="date">
-                        <p id="date">Jan 00 2020</p>
-                        <p id="time">00:00:00</p>
-                    </div>
-                </span>
-            </div>
-            <div class="search">
-                <div class="search-bar">
-                    <div class="sc-container">
-                        <input list="search-list" data-sc class="smoothCaretInput" id="search" placeholder="search the internet . ." autofocus autocomplete="off">
-                        <div class="caret" style="width: 3px;"></div>
-                        <datalist id="search-list">
-                            <option value="!discord.com/app">discord</option>
-                            <option value="!github.com">github</option>
-                            <option value="!open.spotify.com">spotify</option>
-                            <option value="!mail.google.com/mail/u/0/#inbox">mail</option>
-                            <option value="!osu.ppy.sh">osu!</option>
-                            <option value="!store.steampowered.com">steam</option>
-                            <option value="!modrinth.com">modrinth</option>
-                            <option value="!plexion.dev">plexion</option>
-                            <option value="!youtube.com">youtube</option>
-                            <option value="!mangadex.org">mangadex</option>
-                            <option value="!animedao.to">animedao</option>
-                            <option value="!last.fm">last.fm</option>
-                            <option value="!reddit.com">reddit</option>
-                            <option value="!twitch.tv">twitch</option>
-                            <option value="!twitter.com/explore">twitter</option>
-                        </datalist>
-                    </div>
-                    <button class="go" id="go" onclick="go()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
-                    </button>
+            <div class="head-cont">
+                <div class="cover">
+                    <img src="/img/celeste.png" loading="lazy">
                 </div>
-            </div>
-            <div class="notice">
-                <p onclick="add_to_search('!')"><strong>!</strong> to open a site</p>
-                <p onclick="add_to_search('#')"><strong>#</strong> to search youtube</p>
-                <p onclick="add_to_search('@')"><strong>@</strong> to open direct</p>
+                <div class="search">
+                    <div class="search-bar">
+                        <div class="sc-container">
+                            <input list="search-list" data-sc class="smoothCaretInput" id="search" placeholder="search anything!" autofocus autocomplete="off">
+                            <div class="caret" style="width: 3px;"></div>
+                            <datalist id="search-list">
+                                <option value="!discord.com/app">discord</option>
+                                <option value="!github.com">github</option>
+                                <option value="!open.spotify.com">spotify</option>
+                                <option value="!mail.google.com/mail/u/0/#inbox">mail</option>
+                                <option value="!osu.ppy.sh">osu!</option>
+                                <option value="!store.steampowered.com">steam</option>
+                                <option value="!modrinth.com">modrinth</option>
+                                <option value="!plexion.dev">plexion</option>
+                                <option value="!youtube.com">youtube</option>
+                                <option value="!mangadex.org">mangadex</option>
+                                <option value="!animedao.to">animedao</option>
+                                <option value="!last.fm">last.fm</option>
+                                <option value="!reddit.com">reddit</option>
+                                <option value="!twitch.tv">twitch</option>
+                                <option value="!twitter.com/explore">twitter</option>
+                            </datalist>
+                        </div>
+                        <button class="go" id="go" onclick="go()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="notice">
+                    <p onclick="add_to_search('!')"><strong>!</strong> to open a site</p>
+                    <p onclick="add_to_search('#')"><strong>#</strong> to search youtube</p>
+                    <p onclick="add_to_search('@')"><strong>@</strong> to open direct</p>
+                </div>
             </div>
             <div class="music">
                 <a class="track" id="track-cont">

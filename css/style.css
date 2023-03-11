@@ -40,9 +40,7 @@ body {
     font-weight: 400;
     color: var(--c2);
     font-size: 20px;
-    background-image: url(/img/wall/hutao768.png);
-    background-size: cover;
-    background-position: center;
+    background-color: var(--b6);
     transition: background-color 0.4s, color 0.4s;
 }
 * {
@@ -93,22 +91,34 @@ strong, :focus-visible {
 .hero {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 120px 0;
     width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(5px) brightness(40%);
-    background: linear-gradient(180deg, hsla(var(--base-hue),calc(var(--saturation)*8%),10%,15%) 0%, var(--b6) 100%);
+}
+
+/* cover */
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 6 / 2;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 /* panel */
 .panel {
     /* reduces elements shifting during day */
     width: 100%;
-    max-width: 730px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 120px;
     animation: show_panel 0.9s;
+}
+.panel .head-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 @keyframes show_panel {
     from, 55% {
@@ -168,6 +178,9 @@ strong, :focus-visible {
 }
 
 /* notice */
+.notice {
+    margin-top: 10px;
+}
 .notice, .music {
     display: flex;
     /*justify-content: space-between;*/
@@ -246,14 +259,8 @@ strong, :focus-visible {
 
 /* search */
 .search-bar {
-    border: 1px solid var(--b4);
-    /*background-image: url(/img/dither.png);
-    background-repeat: repeat;*/
-    background-color: rgba(0,0,0,40%);
-    padding: 10px 40px;
-    border-radius: 50px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 /* input */
@@ -261,24 +268,22 @@ strong, :focus-visible {
     flex: 1;
 }
 .search-bar input {
-    margin-left: -20px;
-    margin-top: -5px;
-    margin-bottom: -5px;
-    padding: 6px 20px;
+    background-color: var(--b5);
+    border-radius: 10px;
+    padding: 12px 40px;
     flex: 1;
     font-family: Inter, sans-serif;
     font-weight: 400;
     color: var(--c2) !important;
-    font-size: 18px;
+    font-size: 16px;
     /* browser defaults */
-    background: none;
     border: none;
 }
 
 .search-bar .sc-container .caret {
-    margin-left: -20px;
+    margin-left: -2px;
     /*width: 3px;*/
-    height: 60%;
+    height: 40%;
     border-radius: 2px;
     background-color: var(--b1);
     animation: caret 1.7s infinite;
@@ -298,13 +303,13 @@ strong, :focus-visible {
 
 /* go! */
 .search-bar .go {
-    padding: 0 20px;
+    padding: 0 10px;
     background-color: var(--l3);
     font-family: Syne, Inter, sans-serif;
     font-weight: 500;
     color: var(--b6) !important;
     font-size: 20px;
-    border-radius: 50px;
+    border-radius: 10px;
     /* browser defaults */
     border: none;
 }

@@ -7,8 +7,8 @@ function update_date_time() {
     let date_now = new Date();
     let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
-    document.getElementById('time').innerHTML = date_now.toLocaleTimeString();
-    document.getElementById('date').textContent = `${months[date_now.getMonth()]} ${pad_num(date_now.getDate())} ${date_now.getFullYear()}`;
+    //document.getElementById('time').innerHTML = date_now.toLocaleTimeString();
+    //document.getElementById('date').textContent = `${months[date_now.getMonth()]} ${pad_num(date_now.getDate())} ${date_now.getFullYear()}`;
 
     // time of day
     let date_hours = date_now.getHours();
@@ -18,7 +18,7 @@ function update_date_time() {
     else                      time_of_day = 'evening';
 
     document.body.setAttribute('time-of-day',time_of_day);
-    document.getElementById('time-of-day').textContent = time_of_day;
+    //document.getElementById('time-of-day').textContent = time_of_day;
 }
 
 // pad number
