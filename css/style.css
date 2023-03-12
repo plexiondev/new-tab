@@ -251,10 +251,57 @@ strong, :focus-visible {
 
 /* links */
 .links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px;
+}
+.links .link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--b5);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--b1);
+    transition: background-color 0.15s;
+}
+
+.links .link .icon {
+    --w: 40px;
+    width: var(--w);
+    height: var(--w);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--b4);
+    border-radius: 7px;
+    transition: background-color 0.15s;
+}
+.links .link .icon :is(img, svg) {
+    width: calc(var(--w) - 14px);
+    height: calc(var(--w) - 14px);
+}
+.links .link .icon :is(img, svg).invert {
+    filter: invert(1);
+}
+
+.links .link .info {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    gap: 10px;
+    gap: 3px;
+}
+.links .link h5 {
+    font-size: 16px;
+    color: var(--c1);
+}
+
+.links .link:is(:hover, :focus-visible) {
+    background-color: var(--b4);
+}
+.links .link:is(:hover, :focus-visible) .icon {
+    background-color: var(--b3);
 }
 
 /* search */
